@@ -1,4 +1,4 @@
-package it.aidexa;
+package com.notifications;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;

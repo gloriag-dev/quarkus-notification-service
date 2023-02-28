@@ -1,13 +1,12 @@
-package it.aidexa.controller;
+package com.notifications.controller;
 
-import it.aidexa.dto.ProductDTO;
+import com.notifications.dto.ProductDTO;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import org.eclipse.microprofile.openapi.annotations.Operation;
+
 import org.eclipse.microprofile.openapi.annotations.extensions.Extension;
-import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 
 @Path("/warehouse")
 public class WarehouseController {
@@ -28,7 +27,6 @@ public class WarehouseController {
     @GET
     @Path("/serverError")
     @Produces(MediaType.APPLICATION_JSON)
-    @Extension(name = "x-rond", value = "{\"requestFlow\": { \"policyName\": \"policy_to_be_executed_BEFORE_API_invocation\"}}", parseValue = true)
     public Response getById2(){
         ProductDTO product = new ProductDTO();
         product.id = "pippo";

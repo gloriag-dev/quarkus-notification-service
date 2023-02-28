@@ -1,4 +1,4 @@
-package it.aidexa.dto;
+package com.notifications.dto;
 
 public class ProductDTO {
     public String id;

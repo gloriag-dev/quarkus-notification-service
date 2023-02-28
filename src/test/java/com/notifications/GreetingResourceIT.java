@@ -1,4 +1,4 @@
-package it.aidexa;
+package com.notifications;
 
 import io.quarkus.test.junit.QuarkusIntegrationTest;
 
